@@ -5,10 +5,10 @@
   "main": "main.js",
   "scripts": {
     "build": "npm run extract && npm run purifycss",
-    "test": "standard main.js",
-    "watch": "watchify -t sheetify main.js -o bundle.js",
     "extract": "browserify -t sheetify -p [ css-extract -o bundle.css ] -p tinyify main.js -o bundle.js",
-    "purifycss": "purifycss bundle.css main.js -m -o bundle.css"
+    "purifycss": "purifycss bundle.css main.js -m -o bundle.css",
+    "test": "standard main.js",
+    "watch": "watchify -t sheetify main.js -o bundle.js"
   },
   "author": "Joshua Wenning",
   "private": true,
