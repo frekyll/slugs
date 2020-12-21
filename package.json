@@ -1,6 +1,6 @@
 {
   "name": "slugs",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "Create human-readable, unique identifiers in the browser",
   "main": "main.js",
   "scripts": {

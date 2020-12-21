@@ -6,6 +6,16 @@ var html = require('nanohtml')
 
 css('tachyons')
 
+var style = css`
+  body {
+    background-color: #cdecff;
+  }
+  :host input,
+  :host textarea {
+    -webkit-appearance: none;
+  }
+`
+
 document.title = 'Create human-readable, unique identifiers in the browser'
 
 var meta = html`
@@ -22,9 +32,9 @@ var header = html`
   </header>
 `
 
-var input = html`<input autofocus class="ba code db f4 mb3 mid-gray h2 w-100" onkeyup=${format} type="text">`
+var input = html`<input autofocus class="ba br0 code db f4 mb3 mid-gray h2 w-100" onkeyup=${format} type="text">`
 
-var output = html`<textarea class="br-0 code db f4 mb3 mid-gray overflow-y-hidden h2 w-100" readonly style="resize: none"></textarea>`
+var output = html`<textarea class="br0 br-0 code db f4 mb3 mid-gray overflow-y-hidden h2 w-100" readonly style="resize: none"></textarea>`
 
 var copyButton = html`<button class="b--black ba bg-white black mb4 ph3 pointer h2 f6" onclick=${copyOutput}>Copy</button>`
 
@@ -56,7 +66,7 @@ var footer = html`
 `
 
 var container = html`
-  <div class="avenir bg-lightest-blue mid-gray pa3 vh-100">
+  <div class="${style} avenir mid-gray pa3">
     ${header}
     ${form}
     ${footer}

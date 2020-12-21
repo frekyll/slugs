@@ -6,8 +6,8 @@
     <h1 class="f1 fw5 mb2 mt0">slugs</h1>
     <h2 class="f4 fw4 mb5 mt0"><i>Create human-readable, unique identifiers in the browser</i></h2>
   </header>
-`,x=m`<input autofocus class="ba code db f4 mb3 mid-gray h2 w-100" onkeyup=${function(t){var n;C.innerText=(n=t.target.value,n=(n=(n=(n=(n=e(n)).replace(/([a-z\d])([A-Z])/g,"$1 $2").replace(/([A-Z]+)([A-Z][a-z\d]+)/g,"$1 $2")).toLowerCase()).replace(/[^a-z\d]+/g,"-")).replace(new RegExp("-{2,}","g"),"-").replace(new RegExp("^-|-$","g"),""))}} type="text">`,C=m`<textarea class="br-0 code db f4 mb3 mid-gray overflow-y-hidden h2 w-100" readonly style="resize: none"></textarea>`,A=m`<button class="b--black ba bg-white black mb4 ph3 pointer h2 f6" onclick=${S}>Copy</button>`,O=m`
-  <div class="avenir bg-lightest-blue mid-gray pa3 vh-100">
+`,x=m`<input autofocus class="ba br0 code db f4 mb3 mid-gray h2 w-100" onkeyup=${function(t){var n;C.innerText=(n=t.target.value,n=(n=(n=(n=(n=e(n)).replace(/([a-z\d])([A-Z])/g,"$1 $2").replace(/([A-Z]+)([A-Z][a-z\d]+)/g,"$1 $2")).toLowerCase()).replace(/[^a-z\d]+/g,"-")).replace(new RegExp("-{2,}","g"),"-").replace(new RegExp("^-|-$","g"),""))}} type="text">`,C=m`<textarea class="br0 br-0 code db f4 mb3 mid-gray overflow-y-hidden h2 w-100" readonly style="resize: none"></textarea>`,A=m`<button class="b--black ba bg-white black mb4 ph3 pointer h2 f6" onclick=${S}>Copy</button>`,O=m`
+  <div class="${"_a6118483"} avenir mid-gray pa3">
     ${w}
     ${m`
   <div class="ml-auto mr-auto mw7">
