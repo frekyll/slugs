@@ -1,12 +1,12 @@
 {
   "name": "slugs",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Create human-readable, unique identifiers in the browser",
   "main": "main.js",
   "scripts": {
     "build": "npm run extract && npm run purifycss",
     "extract": "browserify -t sheetify -p [ css-extract -o bundle.css ] -p tinyify main.js -o bundle.js",
-    "purifycss": "purifycss bundle.css main.js -m -o bundle.css",
+    "purifycss": "purifycss bundle.css main.js -i -m -o bundle.css",
     "test": "standard main.js",
     "watch": "watchify -t sheetify main.js -o bundle.js"
   },
