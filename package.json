@@ -1,0 +1,30 @@
+{
+  "name": "slugs",
+  "version": "0.0.1",
+  "description": "Create human-readable, unique identifiers in the browser",
+  "main": "main.js",
+  "scripts": {
+    "build": "npm run extract && npm run purifycss",
+    "test": "standard main.js",
+    "watch": "watchify -t sheetify main.js -o bundle.js",
+    "extract": "browserify -t sheetify -p [ css-extract -o bundle.css ] -p tinyify main.js -o bundle.js",
+    "purifycss": "purifycss bundle.css main.js -m -o bundle.css"
+  },
+  "author": "Joshua Wenning",
+  "private": true,
+  "license": "MIT",
+  "devDependencies": {
+    "browserify": "^17.0.0",
+    "css-extract": "^2.0.0",
+    "nanohtml": "^1.9.1",
+    "purify-css": "^1.2.5",
+    "sheetify": "^8.0.0",
+    "standard": "^16.0.3",
+    "tinyify": "^3.0.0",
+    "watchify": "^3.11.1"
+  },
+  "dependencies": {
+    "lodash.deburr": "^4.1.0",
+    "tachyons": "^4.12.0"
+  }
+}
