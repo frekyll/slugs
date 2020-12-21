@@ -1,2 +1,2 @@
 # slugs
-Create human-readable, unique identifiers in the browser
+> Create human-readable, unique identifiers in the browser
